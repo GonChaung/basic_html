@@ -1,0 +1,235 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* BODY - Main page styling with blue background */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #0c4a6e; /* Dark blue background */
+  color: white;
+  line-height: 1.6;
+}
+
+/* HEADER - Top section */
+header {
+  background-color: #0c4a6e; /* Dark blue */
+  padding-bottom: 20px;
+}
+
+/* H1 - Main title */
+h1 {
+  background-color: #0369a1; /* Medium blue */
+  color: white;
+  padding: 40px 20px;
+  text-align: center;
+  font-size: 2em;
+  margin: 0;
+}
+
+/* Paragraph under h1 */
+h1 + p {
+  text-align: center;
+  padding: 15px;
+  background-color: #0369a1;
+  color: white;
+  font-style: italic;
+  margin: 0;
+}
+
+/* HR - Horizontal line */
+hr {
+  border: none;
+  height: 2px;
+  background-color: #38bdf8; /* Cyan line */
+  margin: 0;
+}
+
+/* NAVIGATION - Menu section */
+nav {
+  background-color: #0369a1; /* Medium blue */
+  padding: 20px;
+  text-align: center;
+}
+
+nav p {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+  color: white;
+  font-weight: bold;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+nav li {
+  display: inline-block;
+}
+
+nav a {
+  text-decoration: none;
+  color: #22d3ee; /* Bright cyan */
+  font-weight: bold;
+  padding: 5px 10px;
+}
+
+nav a:hover {
+  color: #ff00ff; /* Magenta hover like in screenshot */
+  text-decoration: underline;
+}
+
+/* MAIN - Content area */
+main {
+  padding: 0;
+}
+
+/* SECTIONS - Each content block with cyan background */
+section {
+  margin: 0;
+  padding: 40px 20px;
+  background-color: #06b6d4; /* Bright cyan background */
+  color: #ff00ff; /* Magenta text */
+  text-align: center;
+  border-bottom: 1px solid #0c4a6e;
+}
+
+/* Alternating section colors */
+section:nth-child(even) {
+  background-color: #0369a1; /* Dark blue for even sections */
+  color: white;
+}
+
+/* H2 - Section headings */
+h2 {
+  color: #ff00ff; /* Magenta */
+  font-size: 1.8em;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+section:nth-child(even) h2 {
+  color: white;
+}
+
+/* H3 - Subsection headings */
+h3 {
+  color: white;
+  font-size: 1.5em;
+  margin-bottom: 20px;
+}
+
+/* PARAGRAPHS */
+p {
+  margin-bottom: 15px;
+  font-size: 1.1em;
+}
+
+/* STRONG - Bold text */
+strong {
+  color: #ff00ff; /* Magenta for emphasis */
+  font-weight: bold;
+}
+
+section:nth-child(even) strong {
+  color: white;
+}
+
+/* LISTS - Unordered lists */
+section ul {
+  list-style: none;
+  margin: 20px auto;
+  max-width: 600px;
+  text-align: left;
+}
+
+section li {
+  margin-bottom: 10px;
+  padding-left: 20px;
+}
+
+/* LINKS - Regular links in content */
+section a {
+  color: #1e40af; /* Dark blue for links */
+  text-decoration: none;
+  font-weight: bold;
+}
+
+section a:hover {
+  text-decoration: underline;
+}
+
+/* IMAGE - Photo styling */
+img {
+  max-width: 600px;
+  height: auto;
+  margin: 20px auto;
+  display: block;
+  border: 3px solid white;
+}
+
+/* TABLE - Styling for table */
+table {
+  width: 100%;
+  max-width: 600px;
+  margin: 20px auto;
+  border-collapse: collapse;
+  background-color: white;
+  color: #333;
+}
+
+/* TABLE HEADER */
+th {
+  background-color: #0369a1; /* Blue header */
+  color: white;
+  padding: 12px;
+  text-align: left;
+  font-weight: bold;
+  border: 1px solid #0c4a6e;
+}
+
+/* TABLE DATA */
+td {
+  padding: 10px 12px;
+  border: 1px solid #ddd;
+  color: #333;
+}
+
+/* TABLE ROWS - Alternating colors */
+tr:nth-child(even) {
+  background-color: #f0f9ff;
+}
+
+/* RESPONSIVE DESIGN - For mobile devices */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 1.5em;
+    padding: 30px 15px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  section {
+    padding: 30px 15px;
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  table {
+    font-size: 0.9em;
+  }
+}
+
+/* SMOOTH SCROLLING */
+html {
+  scroll-behavior: smooth;
+}
